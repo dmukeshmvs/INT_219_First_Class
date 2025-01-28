@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Styling link dependin on state.</h1>
+    <p><b><a href="https://www.lpu.in/">Link of LPU</a></b></p>
+    <p><b>Note: The above link is for the LPU.</b></p>
+    <p><b>The link is a fake link for color of link in code</b></p>
+    <p><b><a href="https://www.example.com/">Fake link</a></b></p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            border: 2px solid brown;
+            border-radius: 100px;
+            padding: 25px 25px 25px 25px;
+            margin-left: 30px;
+            margin-top: 40px;
+            width: 100px;
+        }
+        img:hover{
+            transform: scale(1.2); /*Enlarge image*/
+            transition: transform 0.7s ease; /*Smooth animation*/
+            box-shadow: 0 0 100px 5px green; /*vertical horizontal blur spread color*/
+        }
+    </style>
+</head>
+<body>
+    <h1>The above image is Tree</h1>
+    <a target="_blank" href="https://www.w3schools.com/"><img src="tree.webp" alt="" style="width: 150px"></a>
+</body>
+</html>

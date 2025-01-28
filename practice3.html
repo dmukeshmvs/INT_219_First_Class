@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "A C"
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+.a{
+    grid-area: header;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.b{
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+.c{
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+/* .footer{
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+} */
+@media(max-width: 768px){
+    .grid-container{
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .sidebar{
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <sidebar class="a">A</sidebar>
+        <aside class="b">B</aside>
+        <content class="c">C</content>
+    </div>
+</body>
+</html>

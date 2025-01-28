@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h2>Dont have an account. create</h2>
+            <label for="name">Name: </label>
+            <input type="text" placeholder="First name, Last Name" id="name" name="name" required><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="city">Select city</label>
+            <select name="city" id="city">
+                <option value="Select" disabled selected hidden>Select</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Srikakulam">Srikakulam</option>
+                <option value="Kadapa">Kadapa</option>
+            </select><br>
+            <label for="address">Address: </label>
+            <textarea name="" id="address" cols="30" rows="5" name="address"></textarea><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" value="male" name="gender" required>Male
+            <input type="radio" value="female" name="gender" required>Female
+            <input type="radio" value="others" name="gender" required>others
+            <br>
+            <label for="password">password</label>
+            <input type="password" name="password" placeholder="Enter password" required><br>
+            <label for="upload">upload</label>
+            <input type="file" name="file" required><br> <br>
+            <input type="submit" value="Submit form" required>
+            <input type="reset" required>
+        </form>
+    </div>
+</body>
+</html>
